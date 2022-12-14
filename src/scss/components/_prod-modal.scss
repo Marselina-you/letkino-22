@@ -1,0 +1,14 @@
+.graph-modal__container {
+  padding: 0;
+  background-color: var(--ice-color);
+}
+
+.modal-content {
+  //display: block;
+  height: auto;
+
+  &__header {
+    padding: 0 20px;
+
+  }
+}

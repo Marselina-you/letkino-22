@@ -1,0 +1,63 @@
+<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="prod-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыт модальное окно"></button>
+    <div class="modal-content">
+      <div class="modal-content__header modal-header">
+        <h1 class="view-product__availability">В наличии</h1>
+      </div>
+      <div class="view-product__top modal-top">
+        <div class="view-product__image modal-image">
+          <img src="img/camamber.png" alt="">
+        </div>
+        <div class="view-product__text modal-text"></div>
+      </div>
+      <div class="view-product__details details" data-simplebar>
+        <ul class="details__list list-reset">
+          <li class="details-accordion modal-descr"></li>
+          <li class="details-accordion">
+            <button class="details-accordion__control btn-reset" aria-expanded="false">
+              <span class="details-accordion__title">Пищевая ценность на&nbsp;100 г</span>
+              <span class="details-accordion__icon"></span>
+            </button>
+            <ul class="details-accordion__content list-reset details-accordion__content--max modal-composition"
+              aria-hidden="true">
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="graph-modal__container cart-modal" role="dialog" aria-modal="true" data-graph-target="cart-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal-content modal-content">
+      <div class="cart-modal__top">
+        <h2 class="cart-modal__title">Оформление заказа</h2>
+        <span class="cart-modal__order-number">заказ 345884</span>
+      </div>
+      <div class="cart-modal__order">
+        <div class="cart-modal-order__top">
+          <div class="span cart-modal-order__quantity">Товаров в заказе<span></span></div>
+          <div class="span cart-modal-order__summ">Общая сумма заказа<span></span></div>
+        </div>
+        <div class="cart-modal-order__content">
+          <button class="btn-reset cart-modal-order__show">
+            Состав заказа
+            <svg>
+              <use xlink:href="img/sprite.svg#angle" />
+            </svg></a>
+          </button>
+          <ul class="cart-modal-order__list list-reset"></ul>
+        </div>
+      </div>
+      <form class="cart-modal__form">
+        <input type="text" class="input cart-modal__input" name="name" placeholder="Ваше имя"
+          data-validate-field="name">
+        <input type="tel" class="input cart-modal__input" name="tel" placeholder="Номер телефона"
+          data-validate-field="phone">
+        <input type="email" class="input cart-modal__input" name="email" placeholder="E-mail"
+          data-validate-field="email">
+        <button class="btn btn-reset btn--mail">Оформить заказ</button></form>
+      <!-- контент модального окна -->
+    </div>
+  </div>
+</div>

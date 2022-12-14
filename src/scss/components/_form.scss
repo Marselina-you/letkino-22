@@ -1,0 +1,61 @@
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-bottom: 66px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    width: 100%;
+
+
+  }
+  .just-validate-error-label {
+    margin-bottom: 3px;
+    color: var(--light-color) !important;
+  }
+
+  &__input {
+
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--dark-color);
+
+    &::placeholder {
+      color: var(--dark-light-color);
+
+    }
+
+
+  }
+  &__textarea {
+    width: 100%;
+    height: 126px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--dark-color);
+
+    &::placeholder {
+      color: var(--dark-light-color);
+      padding-top: 12px;
+
+    }
+
+
+  }
+  &__btn {
+
+  @include flex-h-center;
+    padding: 7px 30px;
+  }
+
+
+}

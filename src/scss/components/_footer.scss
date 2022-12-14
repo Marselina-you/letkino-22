@@ -1,0 +1,46 @@
+.footer {
+  margin-left: 0;
+  margin-top: 0;
+  width: 100%;
+  background-color: var(--putty-color);
+  padding: 26px 0;
+
+  &__container {
+
+    @include flex;
+
+  }
+  &__info {
+    @include flex-v-center;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  &__social {
+    @include flex-v-center;
+
+    margin-left: auto;
+  }
+  &__image {
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+    width: 33px;
+    height: 33px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--green-color);
+      object-fit: cover;
+      transition: fill 0.3s ease-in-out;
+
+      &:hover {
+        fill: var(--green-dark-color);
+
+      }
+
+    }
+  }
+
+}

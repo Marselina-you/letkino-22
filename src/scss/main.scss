@@ -6,6 +6,24 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/btn";
+@import "./components/hero";
+@import "./components/catalog-header";
+@import "./components/catalog";
+@import "./components/product";
+@import "./components/view-product";
+@import "./components/accordion";
+@import "./components/prod-modal";
+@import "./components/cart";
+@import "./components/cart-modal";
+
+
+
+@import "./components/message";
+@import "./components/form";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/footer";
 
 // тестовые стили, удалите их
 .page__body {

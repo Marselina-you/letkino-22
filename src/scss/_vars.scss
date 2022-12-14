@@ -1,12 +1,41 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+
   --content-width: 1170px;
+  --content-fluid-width: 1790px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+//offset
+--main-offset: 40px;
+--second-offset: 20px;
+--big-offset: 60px;
+--small-offset: 10px;
 
   // colors
   --light-color: #fff;
+  --putty-color: rgb(219, 218, 196, 0.7);
+  --putty-sweet-color: rgb(248, 246, 212);
+  --putty-light-color: rgba(219, 218, 196, 0.7);
+  --ice-color: rgb(243, 245, 247);
+  --green-color: rgb(62, 142, 78);
+  --green-dark-color: rgb(50, 108, 60);
+  --dark-color: rgb(13, 13, 11);
+  --dark-light-color: rgba(13, 13, 11, 0.7);
+  --gray-color: rgb(118, 118, 118);
+  --black-color: rgb(28, 31, 35);
+  --black-dark-color: rgb(33, 37, 41);
+
+   //font
+   --font-family: "Jost", sans-serif;
+   --font-light: 300 25px / 140% var(--font-family);
+   --font-mini-light: 300 18px / 160% var(--font-family);
+   --font-regular: 400 25px / 100% var(--font-family);
+   --font-mini-regular: 400 18px / 160% var(--font-family);
+   --font-regular-bold: 600 30px / 100% var(--font-family);
+
+   --font-mini-semibold: 600 18px / 140% var(--font-family);
+   --font-semibold: 600 25px / 140% var(--font-family);
+   --font-high-bold: 700 30px / 50% var(--font-family);
+   --font-bold: 700 25px / 50% var(--font-family);
 }

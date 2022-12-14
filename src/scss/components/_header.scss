@@ -1,0 +1,164 @@
+.header {
+
+  margin-left: 0;
+  margin-top: 0;
+  width: 100%;
+
+  background-color: var(--putty-color);
+  padding: 15px 0;
+  @include small-tablet {
+    padding: 10px 0;
+
+
+  }
+  &__container {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+
+  }
+
+  .connect {
+    @include flex-v-center;
+    grid-column: 8 span;
+    @include big-desktop {
+      grid-column: 6 span;
+    }
+    @include tablet {
+      grid-column:  2 span;
+    }
+    @include small-tablet {
+      grid-column: 5 span;
+    }
+
+
+    &__link {
+
+      padding-right: 27px;
+      font: var(--font-mini-regular);
+      color: var(--green-color);
+
+      &:hover {
+        color: var(--green-dark-color);
+      }
+
+
+    }
+    &__image {
+      margin-right: 27px;
+      width: 21px;
+      height: 21px;
+
+      @include tablet {
+        margin-right: 15px;
+      }
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        fill: var(--dark-color);
+        object-fit: cover;
+        transition: fill 0.3s ease-in-out;
+
+        &:hover {
+          fill: #e93b78 ;
+
+        }
+
+      }
+    }
+
+  }
+
+  .navigation {
+    &__image {
+
+      &:not(:last-child) {
+        margin-right: 27px;
+      }
+      width: 33px;
+      height: 33px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: var(--dark-color);
+        object-fit: cover;
+        transition: fill 0.3s ease-in-out;
+
+        &:hover {
+          fill: var(--dark-light-color);
+
+        }
+
+      }
+    }
+
+
+
+    @include flex-v-center;
+    margin-left: auto;
+    grid-column: 2 span;
+
+    @include big-desktop {
+      grid-column: 3 span;
+    }
+    @include tablet {
+      grid-column:  5 span;
+    }
+    @include small-tablet {
+      grid-column: 6 span;
+    }
+}
+  .social {
+    &__image {
+
+      &:not(:last-child) {
+        margin-right: 27px;
+      }
+      width: 33px;
+      height: 33px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: var(--green-color);
+        object-fit: cover;
+        transition: fill 0.3s ease-in-out;
+
+        &:hover {
+          fill: var(--green-dark-color);
+
+        }
+
+      }
+    }
+
+
+    @include flex-v-center;
+    grid-column:  2 span;
+    margin-left: auto;
+    @include big-desktop {
+      grid-column: 3 span;
+    }
+    @include tablet {
+      grid-column:  5 span;
+    }
+    @include small-tablet {
+      display: none;
+    }
+
+
+
+
+
+
+
+  }
+
+}

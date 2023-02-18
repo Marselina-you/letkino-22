@@ -3,12 +3,14 @@
 
   &__content {
     padding: 100px 0;
+    padding-bottom: 50px;
 
 
    }
    &__btn-wrap {
-    grid-column: 3 span;
+    display: flex;
     justify-content: center;
+    padding-bottom: 50px;
    }
 
 }

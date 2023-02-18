@@ -1,16 +1,25 @@
-//navigation for menu 
+//navigation for menu
 
 .nav {
   margin: 0;
   padding: 0;
   padding-right: 25px;
 
+  @include small-tablet {
+    padding-right: 10px;
+  }
 
 
   &__list {
     @include flex-v-center;
+
     display: grid;
-  grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 
   }
   &__item {
@@ -19,6 +28,13 @@
 
     &:last-child {
       margin-left: auto;
+    }
+
+    @include mobile {
+      padding-bottom: 10px;
+      &:last-child {
+        margin: 0;
+      }
     }
 }
 &__link {

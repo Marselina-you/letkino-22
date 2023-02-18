@@ -13,7 +13,14 @@
     background-image: url('../img/phone-sm.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+    min-height: 580px;
 
+  }
+  @include small-tablet {
+    min-height: 450px;
+  }
+  @include mobile {
+    min-height: 300px;
   }
 
   &__container {
@@ -41,6 +48,8 @@
   color: var(--dark-color);
   margin-top: 230px;
   grid-column: 3 / 8 span;
+  text-shadow: white 2px 3px 4px;
+
 
   @include big-desktop {
     margin-top: 280px;
@@ -84,7 +93,11 @@
   grid-column: 12 span;
   grid-template-columns: repeat(12, 1fr);
   @include small-tablet {
+    background-color: gold;
+  }
+  @include mobile {
     display: none;
+
   }
 }
 .logo {
@@ -96,6 +109,9 @@
   @include tablet {
     grid-column: 2 span;
   }
+  @include small-tablet {
+    padding-left: 5px;
+  }
 
 }
 &__nav {
@@ -105,6 +121,9 @@
 
   @include tablet {
     grid-column: 10 span;
+  }
+  @include mobile {
+    grid-column: 9 span;
   }
 
 }

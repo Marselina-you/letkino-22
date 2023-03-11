@@ -29,7 +29,7 @@
     //flex-direction: column;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: var(--second-offset);
 
 
   }
@@ -76,16 +76,12 @@
   }
 
   @include tablet {
-
     font-size: 28px;
     margin-top: 0;
   }
 
 }
 .menu {
-  //@include flex-all-sb;
-
-  //width: 85%;
   padding: 12px 0;
   margin-top: 38px;
   background-color: var(--putty-light-color);

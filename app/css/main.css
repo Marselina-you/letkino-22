@@ -106,7 +106,7 @@ html {
   display: grid;
   -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px;
+  gap: var(--main-offset);
 }
 
 img {
@@ -449,20 +449,21 @@ a {
 .header .social__image svg:hover {
   fill: var(--green-dark-color);
 }
+
 .btn {
   display: inline;
   outline: none;
   border: none;
   border-radius: 4px;
   padding: 15px 30px;
-  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   text-align: center;
   color: var(--light-color);
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn--mail {
@@ -471,11 +472,25 @@ a {
 .btn--mail:hover {
   background-color: var(--dark-color);
 }
+.btn--mail:active {
+  border: 1px solid red;
+  background-color: var(--dark-color);
+}
+.btn--mail:focus {
+  background-color: var(--dark-color);
+}
 
 .btn--buy {
   background-color: var(--green-color);
 }
 .btn--buy:hover {
+  background-color: var(--green-dark-color);
+}
+.btn--buy:active {
+  border: 1px solid red;
+  background-color: var(--green-dark-color);
+}
+.btn--buy:focus {
   background-color: var(--green-dark-color);
 }
 
@@ -493,7 +508,7 @@ a {
   justify-content: center;
   border: none;
   border-radius: 6px;
-  padding: 1px 10px;
+  padding: 1px var(--small-offset);
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -592,7 +607,7 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
-  gap: 20px;
+  gap: var(--second-offset);
 }
 .hero__content {
   grid-column: 3/7 span;
@@ -781,6 +796,24 @@ a {
   -ms-grid-column-span: 3;
   grid-column: 3 span;
 }
+@media (max-width: 1024px) {
+  .catalog-list__item {
+    -ms-grid-column-span: 4;
+    grid-column: 4 span;
+  }
+}
+@media (max-width: 768px) {
+  .catalog-list__item {
+    -ms-grid-column-span: 6;
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 576px) {
+  .catalog-list__item {
+    -ms-grid-column-span: 10;
+    grid-column: 10 span;
+  }
+}
 
 .product {
   position: relative;
@@ -888,12 +921,12 @@ a {
   font: var(--font-light);
 }
 .view-product__content {
-  border-radius: 5px;
   display: -ms-grid;
   display: grid;
   grid-column: 2/10 span;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+  border-radius: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: var(--ice-color);
@@ -990,7 +1023,7 @@ a {
 }
 .details-accordion__content {
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0 var(--second-offset);
   max-height: 0;
   font: var(--font-mini-light);
   -webkit-box-sizing: content-box;
@@ -1027,7 +1060,7 @@ a {
   height: auto;
 }
 .modal-content__header {
-  padding: 0 20px;
+  padding: 0 var(--second-offset);
 }
 
 .cart {
@@ -1229,7 +1262,7 @@ a {
 .cart-modal {
   border-radius: 4px;
   width: 580px;
-  padding: 40px;
+  padding: var(--main-offset);
 }
 .cart-modal .graph-modal__close {
   display: none;
@@ -1302,7 +1335,7 @@ a {
 .cart-modal-order__top span {
   font-weight: 700;
   color: var(--color-text);
-  margin-left: 20px;
+  margin-left: var(--second-offset);
 }
 .cart-modal-order__list--visible {
   display: block;
@@ -1382,7 +1415,7 @@ a {
   font-weight: 600;
   font-size: 32px;
   color: var(--light-color);
-  padding-bottom: 40px;
+  padding-bottom: var(--main-offset);
   padding-top: 45px;
 }
 
@@ -1415,7 +1448,7 @@ a {
 .callback-form__input {
   width: 100%;
   height: 56px;
-  padding: 0 20px;
+  padding: 0 var(--second-offset);
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -1482,7 +1515,7 @@ a {
 }
 @media (max-width: 768px) {
   .nav {
-    padding-right: 10px;
+    padding-right: var(--small-offset);
   }
 }
 .nav__list {
@@ -1519,7 +1552,7 @@ a {
 }
 @media (max-width: 576px) {
   .nav__item {
-    padding-bottom: 10px;
+    padding-bottom: var(--small-offset);
   }
   .nav__item:last-child {
     margin: 0;

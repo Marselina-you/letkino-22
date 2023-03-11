@@ -5,6 +5,17 @@
   &__item {
     grid-column: 3 span;
 
+    @include tablet {
+      grid-column: 4 span;
+    }
+    @include small-tablet {
+      grid-column: 6 span;
+    }
+    @include mobile {
+      grid-column: 10 span;
+    }
+
+
   }
 }
 .product {
@@ -15,7 +26,6 @@
 
   &__image {
     position: relative;
-    //margin-bottom: 22px;
 
     img {
       display: block;
@@ -57,7 +67,6 @@
   &__title {
     display: flex;
     align-items: center;
-    //margin-bottom: 14px;
     min-height: 72px;
     text-align: center;
     font: var(--font-high-bold);

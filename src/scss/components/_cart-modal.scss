@@ -1,8 +1,7 @@
 .cart-modal {
   border-radius: 4px;
   width: 580px;
-  padding: 40px;
-
+  padding: var(--main-offset);
 
   .graph-modal__close {
     display: none;
@@ -38,12 +37,12 @@
   }
   &__form {
     display: block;
-    //flex-direction: column;
+
   }
 
   &__input {
     color: var(--color-grey);
-    //background-color: #f6f6f6;
+
 
     &:not(:last-child) {
       margin-bottom: var(--small-offset);
@@ -61,9 +60,6 @@
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   padding: 30px;
-
-
-
   &__top {
     font: var(--middle-book);
     line-height: 14px;
@@ -76,13 +72,11 @@
     span {
       font-weight: 700;
       color: var(--color-text);
-      margin-left: 20px;
+      margin-left: var(--second-offset);
     }
   }
 
   &__list {
-    //display: none;
-
     &--visible {
       display: block;
     }

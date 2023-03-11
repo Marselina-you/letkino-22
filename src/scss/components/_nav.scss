@@ -6,7 +6,7 @@
   padding-right: 25px;
 
   @include small-tablet {
-    padding-right: 10px;
+    padding-right: var(--small-offset);
   }
 
 
@@ -31,7 +31,7 @@
     }
 
     @include mobile {
-      padding-bottom: 10px;
+      padding-bottom: var(--small-offset);
       &:last-child {
         margin: 0;
       }

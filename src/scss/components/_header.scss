@@ -28,13 +28,8 @@
       flex-direction: column;
       align-items: center;
     }
-    //display: grid;
-    //grid-template-columns: repeat(12, 1fr);
-
-
-  }
-
-  &__block-icons {
+    }
+&__block-icons {
     display: flex;
 
     @include small-tablet {
@@ -49,20 +44,15 @@
 
     }
 
-    //grid-column: 8 span;
-
-  }
+    }
 
   .connect {
 
     @include flex-v-center;
 
-    //grid-column: 4 span;
-    @include big-desktop {
-      //grid-column: 6 span;
-    }
+
+
     @include tablet {
-      //grid-column:  4 span;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -72,8 +62,7 @@
     }
     @include mobile {
       flex-direction: column;
-      //justify-content: start;
-      //align-items: center;
+
     }
 
 &__block {
@@ -160,18 +149,9 @@
 
 
     @include flex-v-center;
-   // margin-left: auto;
-    //grid-column: 2 span;
 
-    @include big-desktop {
-      //grid-column: 3 span;
-    }
-    @include tablet {
-      //grid-column:  4 span;
-    }
-    @include small-tablet {
-      //grid-column: 3 span;
-    }
+
+
 }
   .social {
     display: flex;
@@ -204,16 +184,8 @@
     @include flex-v-center;
     //grid-column:  2 span;
     //margin-left: auto;
-    @include big-desktop {
-      //grid-column: 3 span;
-    }
-    @include tablet {
-      //grid-column:  4 span;
-    }
-    @include small-tablet {
-      //grid-column: 4 span;
 
-    }
+
 
 
 

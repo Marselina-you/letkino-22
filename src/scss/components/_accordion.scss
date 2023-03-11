@@ -1,8 +1,5 @@
 .details {
-  //padding: 20px;
   margin-bottom: 0;
-
-
 }
 .details-accordion {
 
@@ -36,7 +33,7 @@
 
  &__content {
     overflow: hidden;
-    padding: 0 20px;
+    padding: 0 var(--second-offset);
     max-height: 0;
     font: var( --font-mini-light);
     box-sizing: content-box;
@@ -44,8 +41,7 @@
     transition: all 0.3s ease-out;
     will-change: max-height;
 
-
-  }
+}
   &__content--max {
     margin-left: 25%;
     max-width: 50%;

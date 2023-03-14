@@ -27,7 +27,8 @@
   --black-dark-color: rgb(33, 37, 41);
 
    //font
-   --font-family: "Jost", sans-serif;
+   --font-family: "Jost", "Miama", sans-serif;
+   --font-family-2: "Miama", sans-serif;
    --font-light: 300 25px / 140% var(--font-family);
    --font-mini-light: 300 18px / 160% var(--font-family);
    --font-regular: 400 25px / 100% var(--font-family);
@@ -38,4 +39,8 @@
    --font-semibold: 600 25px / 140% var(--font-family);
    --font-high-bold: 700 30px / 50% var(--font-family);
    --font-bold: 700 25px / 50% var(--font-family);
+
+   --font-miama: 400 30px / 150% var(--font-family-2);
+
+
 }

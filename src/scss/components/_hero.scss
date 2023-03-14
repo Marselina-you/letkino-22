@@ -1,32 +1,33 @@
 .hero {
-
-  background-image: url('../img/title-phone.jpg');
+  background-image: url('../img/bg-phone.jpg');
+  backdrop-filter: blur(5px);
   background-repeat: no-repeat;
   min-height: 900px;
-  @include big-desktop {
-    background-image: url('../img/title_fon.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 900px;
-  }
-  @include tablet {
-    background-image: url('../img/phone-sm.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 580px;
 
+
+
+  @include big-desktop {
+    //background-image: url('../img/title_fon.webp');
+    //background-repeat: no-repeat;
+    //background-size: 100%;
+    //min-height: 900px;
   }
-  @include small-tablet {
-    min-height: 450px;
+
+  @include tablet {
+    background-image: url('../img/3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    //min-height: 900px;
+    min-height: 750px;
   }
   @include mobile {
-    min-height: 300px;
+    background-image: url('../img/mb-phone.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 380px;
   }
 
   &__container {
-    //@include flex-v-center;
-
-    //flex-direction: column;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--second-offset);
@@ -35,49 +36,55 @@
   }
 
 &__content {
-  grid-column: 3 / 7 span;
+  display: inline-block;
+  grid-column: 6 span;
 
-
-
-
+  @include tablet {
+    grid-column: 12 span;
+  }
 }
-&__title {
-  font-weight: 600;
-  font-size: 65px;
-  letter-spacing: 5px;
-  color: var(--dark-color);
-  margin-top: 230px;
-  grid-column: 3 / 8 span;
-  text-shadow: white 2px 3px 4px;
-
-
-  @include big-desktop {
-    margin-top: 280px;
-
+&__big-logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 120px;
+  img {
+    width: 500px;
   }
 
   @include tablet {
-    margin-top: 10px;
-    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
-
-
+  @include mobile {
+    img {
+      width: 300px;
+    }
+  }
 }
+
 &__subtitle {
   margin: 0;
-  font-weight: 600;
+  margin-top: 30px;
   font-size: 32px;
   color: var(--dark-color);
-  grid-column: 3 / 8 span;
-  margin-top: 250px;
+  font: var(--font-miama);
+  font-weight: 600;
+  text-align: center;
+
   @include big-desktop {
-    margin-top: 200px;
-    font-size: 28px;
+   // margin-top: 200px;
+    //font-size: 28px;
   }
 
   @include tablet {
     font-size: 28px;
-    margin-top: 0;
+
   }
 
 }
@@ -85,6 +92,7 @@
   padding: 12px 0;
   margin-top: 38px;
   background-color: var(--putty-light-color);
+  backdrop-filter: blur(3px);
   display: grid;
   grid-column: 12 span;
   grid-template-columns: repeat(12, 1fr);

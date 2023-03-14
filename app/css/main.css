@@ -20,7 +20,8 @@
   --gray-color: rgb(118, 118, 118);
   --black-color: rgb(28, 31, 35);
   --black-dark-color: rgb(33, 37, 41);
-  --font-family: "Jost", sans-serif;
+  --font-family: "Jost", "Miama", sans-serif;
+  --font-family-2: "Miama", sans-serif;
   --font-light: 300 25px / 140% var(--font-family);
   --font-mini-light: 300 18px / 160% var(--font-family);
   --font-regular: 400 25px / 100% var(--font-family);
@@ -30,6 +31,7 @@
   --font-semibold: 600 25px / 140% var(--font-family);
   --font-high-bold: 700 30px / 50% var(--font-family);
   --font-bold: 700 25px / 50% var(--font-family);
+  --font-miama: 400 30px / 150% var(--font-family-2);
 }
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
@@ -76,6 +78,13 @@
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: "Miama";
+  src: url("../fonts/../fonts/MiamaNueva.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -90,7 +99,7 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family, --font-family-2, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -572,34 +581,26 @@ a {
 }
 
 .hero {
-  background-image: url("../img/title-phone.jpg");
+  background-image: url("../img/bg-phone.jpg");
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   background-repeat: no-repeat;
   min-height: 900px;
 }
-@media (max-width: 1440px) {
-  .hero {
-    background-image: url("../img/title_fon.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 900px;
-  }
-}
 @media (max-width: 1024px) {
   .hero {
-    background-image: url("../img/phone-sm.jpg");
+    background-image: url("../img/3.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 580px;
-  }
-}
-@media (max-width: 768px) {
-  .hero {
-    min-height: 450px;
+    background-size: 100% 100%;
+    min-height: 750px;
   }
 }
 @media (max-width: 576px) {
   .hero {
-    min-height: 300px;
+    background-image: url("../img/mb-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 380px;
   }
 }
 .hero__container {
@@ -610,52 +611,79 @@ a {
   gap: var(--second-offset);
 }
 .hero__content {
-  grid-column: 3/7 span;
-}
-.hero__title {
-  font-weight: 600;
-  font-size: 65px;
-  letter-spacing: 5px;
-  color: var(--dark-color);
-  margin-top: 230px;
-  grid-column: 3/8 span;
-  text-shadow: white 2px 3px 4px;
-}
-@media (max-width: 1440px) {
-  .hero__title {
-    margin-top: 280px;
-  }
+  display: inline-block;
+  -ms-grid-column-span: 6;
+  grid-column: 6 span;
 }
 @media (max-width: 1024px) {
-  .hero__title {
-    margin-top: 10px;
-    font-size: 45px;
+  .hero__content {
+    -ms-grid-column-span: 12;
+    grid-column: 12 span;
+  }
+}
+.hero__big-logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 120px;
+}
+.hero__big-logo img {
+  width: 500px;
+}
+@media (max-width: 1024px) {
+  .hero__big-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__big-logo img {
+    width: 300px;
   }
 }
 .hero__subtitle {
   margin: 0;
-  font-weight: 600;
+  margin-top: 30px;
   font-size: 32px;
   color: var(--dark-color);
-  grid-column: 3/8 span;
-  margin-top: 250px;
-}
-@media (max-width: 1440px) {
-  .hero__subtitle {
-    margin-top: 200px;
-    font-size: 28px;
-  }
+  font: var(--font-miama);
+  font-weight: 600;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .hero__subtitle {
     font-size: 28px;
-    margin-top: 0;
   }
 }
 .hero .menu {
   padding: 12px 0;
   margin-top: 38px;
   background-color: var(--putty-light-color);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   display: -ms-grid;
   display: grid;
   -ms-grid-column-span: 12;

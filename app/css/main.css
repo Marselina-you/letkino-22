@@ -1440,6 +1440,7 @@ body {
 }
 
 .swiper-slide {
+  height: 700px;
   text-align: center;
   font-size: 18px;
   background: #fff;

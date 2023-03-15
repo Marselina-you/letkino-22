@@ -105,24 +105,6 @@
 
     <main class="main">
 
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/slide1.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide2.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide3.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide4.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide5.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide1.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide2.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide3.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide4.png" alt=""></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
       <section class="hero">
   <div class="container hero__container">
     <div class="menu hero__menu">
@@ -130,8 +112,8 @@
           alt=""></div>
       <nav class="nav hero__nav" title="Главное меню">
         <ul class="list-reset nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Магазин</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">Магазин</a></li>
+          <li class="nav__item"><a href="#slider" class="nav__link">О нас</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
         </ul>
@@ -159,7 +141,7 @@
   </div>
 </section>
 
-      <section class="catalog">
+      <section class="catalog" id="catalog">
   <div class="container-fluid catalog__container">
     <div class="catalog__content grid">
       <ul class="catalog-list list-reset grid"></ul>
@@ -169,6 +151,76 @@
       <button class="catalog__more btn btn-reset btn--mail">Показать еще</button>
     </div>
   </div>
+</section>
+
+<section class="about-slider" id="slider">
+  <div class="container">
+    <h2 class="about-slider__title visually-hidden">О нас</h2>
+    <div class="swiper aboutSlider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide about-slider__slide"><img src="img/slide1.png" alt="">
+        <div class="about-slider-content">
+          <p>Ферма-сыроварня «Леткино» работает с 1995
+                                 года, основное направление —
+                                  производство сыров по европейским стандартам
+                                 из натурального сырья</p>
+        </div></div>
+        <div class="swiper-slide"><img src="img/slide2.png" alt="">
+          <div class="about-slider-content">
+            <p> Мы готовим сыры из натурального коровьего,
+          козьего и овечьего молока. Мы сами выращиваем
+        и ухаживаем за нашими животными</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img src="img/slide3.png" alt="">
+          <div class="about-slider-content">
+            <p>Наша ферма находится в 300 км от Москвы,
+            в деревне Леткино. Здесь вы можете увидеть все
+           сами: пообщаться с животными, посетить
+            дегустационную избу, посмотреть на процесс
+            приготовления и познакомиться с мастерами</p>
+         </div></div>
+        <div class="swiper-slide"><img src="img/slide4.png" alt="">
+          <div class="about-slider-content"><p>
+            Мы готовим сыры из натурального коровьего,
+         козьего и овечьего молока. Мы сами выращиваем
+       и ухаживаем за нашими животными</p>
+         </div></div>
+        <div class="swiper-slide"><img src="img/slide5.png" alt="">
+          <div class="about-slider-content">
+
+              <span class="about-slider-content__title">Наш адрес</span>
+            <address class="about-slider-content__address"><p>
+              Калязинский район, д. Леткино, стр. 2
+            </address>
+            <em class="about-slider-content__tel"></em>+7 495 679-45-45</em>
+
+         </div></div>
+        <div class="swiper-slide"><img src="img/slide1.png" alt="">
+          <div class="about-slider-content">
+           <span class="about-slider-content__title">ДОСtАВИМ ПО ВАШЕМУ АДРЕСУ</span>
+           <em class="uppercase">БеСПЛАТНО</em>
+            <span>Доставка осуществляется по будням</span>
+            <span>с 10.00 до 20.00</span>
+         </div></div>
+        <div class="swiper-slide"><img src="img/slide2.png" alt="">
+          <div class="about-slider-content">
+            <p>
+            Мы готовим сыры из натурального коровьего,
+         козьего и овечьего молока. Мы сами выращиваем
+       и ухаживаем за нашими животными</p>
+         </div></div>
+
+      </div>
+      <div class="about-slider-nav">
+        <div class="about-slider-nav__next"></div>
+        <div class="about-slider-nav__prev"></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
 </section>
 
       <div class="message">

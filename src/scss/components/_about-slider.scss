@@ -1,8 +1,11 @@
 .about-slider {
   padding-top: 70px;
   padding-bottom: 120px;
-
   background-color: var(--putty-color);
+
+  @include small-tablet {
+    padding: 30px 0;
+  }
 
   &__slide {
     position: relative;
@@ -20,6 +23,11 @@
   line-height: 200%;
   color: var(--light-color);
   background-color: rgba(77,72,60,.7);
+
+  @include small-tablet {
+    width: 90%;
+    font-size: 20px;
+  }
 
   &__title {
     text-transform: uppercase;
@@ -53,6 +61,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include small-tablet {
+              height: 500px;
+            }
           }
 
           .swiper-slide img {
@@ -62,6 +74,10 @@
             //object-fit: cover;
           }
 .about-slider-nav {
+
+  @include small-tablet {
+    display: none;
+  }
 
   &__next {
     position: absolute;

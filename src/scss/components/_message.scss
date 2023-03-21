@@ -15,6 +15,10 @@
     color: var(--light-color);
     padding-bottom: var(--main-offset);
     padding-top: 45px;
+
+    @include small-tablet {
+      font-size: 25px;
+    }
   }
 }
 

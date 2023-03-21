@@ -5,14 +5,21 @@
     padding: 100px 0;
     padding-bottom: 50px;
 
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+ }
 
 
-
-   }
    &__btn-wrap {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+
+    @include small-tablet {
+      padding: 0;
+    }
    }
 
 }

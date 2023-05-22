@@ -13,9 +13,13 @@
  }
 .btn--mail {
   background-color: var(--black-dark-color);
-  &:hover {
-    background-color: var(--dark-color);
+
+  @include for-desktop {
+    &:hover {
+      background-color: var(--dark-color);
+    }
   }
+
   &:active {
     border: 1px solid red;
     background-color: var(--dark-color);
@@ -52,10 +56,14 @@
   text-align: center;
   color: var(--light-color);
   background-color: #3d67b7;
+  cursor: pointer;
 
-  &:hover {
-    background-color: #2d4f8f;
+  @include for-desktop {
+    &:hover {
+      background-color: #2d4f8f;
+    }
   }
+
 
   &--disabled {
     opacity: 0.5;
@@ -78,9 +86,12 @@
     padding: 5px 6px;
     background-color: #3d67b7;
 
-    &:hover {
-      background-color: #2d4f8f
+    @include for-desktop {
+      &:hover {
+        background-color: #2d4f8f
+      }
     }
+
   }
 
   &__svg {

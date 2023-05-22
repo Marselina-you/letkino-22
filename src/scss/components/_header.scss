@@ -1,33 +1,23 @@
 .header {
-
   margin-left: 0;
   margin-top: 0;
   width: 100%;
-
   background-color: var(--putty-color);
-
   padding: 15px 0;
 
-  @include tablet {
-    //background-color: gold;
-  }
-  @include small-tablet {
+ @include small-tablet {
     padding: 10px 0;
-
-
-  }
+}
   &__container {
-
     display: flex;
     justify-content: space-between;
 
     @include small-tablet {
       flex-direction: column-reverse;
-
     }
+
     @include mobile {
       flex-direction: column;
-      //align-items: center;
     }
     }
 &__block-icons {
@@ -46,188 +36,151 @@
       padding: 0;
 
     }
-
-    }
-
-  .connect {
-
-    @include flex-v-center;
-
-
-
-    @include tablet {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    @include small-tablet {
-      flex-direction: row;
-      justify-content: center;
-    }
-    @include mobile {
-      flex-direction: row;
-      justify-content: space-between;
-
-    }
-
-&__block {
-  display: flex;
-  align-items: center;
-}
-    &__link {
-
-      padding-right: 27px;
-      font: var(--font-mini-regular);
-      color: var(--green-color);
-
-      @include mobile {
-        padding: 0;
-      }
-
-
-
-      &:hover {
-        color: var(--green-dark-color);
-      }
-
-
-    }
-    &__image {
-      margin-right: 27px;
-      width: 21px;
-      height: 21px;
-
-      @include tablet {
-        margin-right: 15px;
-      }
-      @include mobile {
-        margin: 5px;
-      }
-
-      svg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        fill: var(--dark-color);
-        object-fit: cover;
-        transition: fill 0.3s ease-in-out;
-
-        &:hover {
-          fill: #e93b78 ;
-
-        }
-
-      }
-    }
-
   }
-
-  .navigation {
-    margin-right: 27px;
-    @include small-tablet {
-      display: flex;
-      justify-content: center;
-
-
-
-    }
-
-    @include mobile {
-      margin-right: 0;
-      padding-bottom: 10px;
-      width: 100%;
-      justify-content: space-between;
-    }
-    &__image {
-
-      &:not(:last-child) {
-        margin-right: 27px;
-      }
-      width: 33px;
-      height: 33px;
-
-      svg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        fill: var(--dark-color);
-        object-fit: cover;
-        transition: fill 0.3s ease-in-out;
-
-        &:hover {
-          fill: var(--dark-light-color);
-
-        }
-
-      }
-    }
-
-
-
-    @include flex-v-center;
-
-
-
 }
-  .social {
-    display: flex;
-    //justify-content: center;
+.social {
+  display: flex;
 
-    @include flex-v-center;
+  @include flex-v-center;
 
-    @include mobile {
-      display: none;
-      //width: 100%;
-      //justify-content: space-between;
+  @include mobile {
+    display: none;
+    //width: 100%;
+    //justify-content: space-between;
+  }
+  &__image {
+
+    &:not(:last-child) {
+      margin-right: 27px;
     }
-    &__image {
+    width: 33px;
+    height: 33px;
 
-      &:not(:last-child) {
-        margin-right: 27px;
-      }
-      width: 33px;
-      height: 33px;
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--green-color);
+      object-fit: cover;
+      transition: fill 0.3s ease-in-out;
 
-      svg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        fill: var(--green-color);
-        object-fit: cover;
-        transition: fill 0.3s ease-in-out;
-
+      @include for-desktop {
         &:hover {
           fill: var(--green-dark-color);
-
         }
-
       }
     }
+  }
+}
+.navigation {
+  margin-right: 27px;
 
-
-    //
-
-
-
-
-
-
-
-
-
-
-
-
+  @include small-tablet {
+    display: flex;
+    justify-content: center;
   }
 
+  @include mobile {
+    margin-right: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__image {
+
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+    width: 33px;
+    height: 33px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--dark-color);
+      object-fit: cover;
+      transition: fill 0.3s ease-in-out;
+
+      @include for-desktop {
+        &:hover {
+          fill: var(--dark-light-color);
+        }
+      }
+    }
+  }
+@include flex-v-center;
+}
+.connect {
+
+  @include flex-v-center;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include small-tablet {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mobile {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+&__block {
+display: flex;
+align-items: center;
+}
+  &__link {
+    padding-right: 27px;
+    font: var(--font-mini-regular);
+    color: var(--green-color);
+
+    @include mobile {
+      padding: 0;
+    }
+@include for-desktop {
+  &:hover {
+    color: var(--green-dark-color);
+  }
+}
+}
+  &__image {
+    margin-right: 27px;
+    width: 21px;
+    height: 21px;
+
+    @include tablet {
+      margin-right: 15px;
+    }
+    @include mobile {
+      margin: 5px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      fill: var(--dark-color);
+      object-fit: cover;
+      transition: fill 0.3s ease-in-out;
+
+      @include for-desktop {
+        &:hover {
+          fill: #e93b78 ;
+        }
+      }
+    }
+  }
 }
 .none-mobile {
   @include mobile {
-
-
     a {
       font-size: 10px;
     }
-
   }
 }

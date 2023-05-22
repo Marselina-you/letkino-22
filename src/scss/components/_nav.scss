@@ -1,5 +1,3 @@
-//navigation for menu
-
 .nav {
   margin: 0;
   padding: 0;
@@ -42,9 +40,12 @@
   font-size: 20px;
   color: var(--dark-color);
 
-  &:hover {
-    color: var(--green-color);
+  @include for-desktop {
+    &:hover {
+      color: var(--green-color);
+    }
   }
+
 }
 
 }

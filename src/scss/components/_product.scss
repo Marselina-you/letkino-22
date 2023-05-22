@@ -47,12 +47,15 @@
       }
 
     }
-    &:hover {
-      .product__view {
-        opacity: 1;
-        visibility: visible;
+    @include for-desktop {
+      &:hover {
+        .product__view {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
+
 
   }
 
@@ -70,6 +73,12 @@
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     opacity: 0;
     visibility: hidden;
+
+    @include tablet {
+      height: 100%;
+      opacity: .6;
+      visibility: visible;
+    }
 
 
     @include tablet {

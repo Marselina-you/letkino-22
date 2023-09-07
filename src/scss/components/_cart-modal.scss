@@ -3,6 +3,16 @@
   width: 580px;
   padding: var(--main-offset);
 
+  @include mobile {
+    position: absolute;
+    left: 0;
+
+    padding: 10px;
+
+  }
+
+
+
   .graph-modal__close {
     display: none;
 
@@ -137,6 +147,13 @@
   .mini-product {
     padding: var(--small-offset) 0;
   }
+
+
+}
+.cart-modal {
+
+
+
 
 
 }

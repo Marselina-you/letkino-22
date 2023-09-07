@@ -23,6 +23,7 @@
   &__item {
     display: grid;
     grid-column: 3 span;
+    justify-content: center;
 
     &:last-child {
       margin-left: auto;
@@ -73,10 +74,6 @@
   --burger-height: 30px;
   --burger-line-height: 3px;
   z-index: 5000;
-
-
-
-
   display: none;
   color: var(--light-color);
 

@@ -404,6 +404,8 @@ if (catalogList) {
     </h2>
     <div class="view-product__price">${normalPrice(dataItem.price)} р</div>
     <div class="view-product__refine">цена указана за 100 грамм</div>
+    <button class="product__btn add-to-cart-btn add-to-cart-btn--modal"  data-id="${dataItem.id}" aria-label="корзина">в корзину
+    </button>
 
     `;
           //prodModalCart.innerHTML = `<button class="product__btn modal-to-cart-btn"  data-id="${dataItem.id}" aria-label="корзина">в корзину
@@ -411,7 +413,7 @@ if (catalogList) {
 
           prodModalDescr.innerHTML = `
     <button class="details-accordion__control btn-reset" aria-expanded="false">
-                <span class="details-accordion__title">${dataItem.title}&nbsp;&mdash; Описание&nbsp;</span>
+                <span class="details-accordion__title">${dataItem.title}&nbsp;&mdash;<span>Описание</span>&nbsp;</span>
                 <span class="details-accordion__icon"></span>
               </button>
               <div class="details-accordion__content" aria-hidden="true">

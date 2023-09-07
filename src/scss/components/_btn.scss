@@ -55,12 +55,14 @@
   line-height: 160%;
   text-align: center;
   color: var(--light-color);
-  background-color: #3d67b7;
+  //background-color: #3d67b7;
+  background-color: var(--green-color);
   cursor: pointer;
 
   @include for-desktop {
     &:hover {
-      background-color: #2d4f8f;
+      background-color: var(--green-dark-color);
+
     }
   }
 
@@ -117,6 +119,9 @@
   &--visibility {
     opacity: 1;
   }
+}
+.add-to-cart-btn--modal {
+  top: 0;
 }
 
 

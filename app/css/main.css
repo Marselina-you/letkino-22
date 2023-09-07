@@ -564,12 +564,12 @@ a {
   line-height: 160%;
   text-align: center;
   color: var(--light-color);
-  background-color: #3d67b7;
+  background-color: var(--green-color);
   cursor: pointer;
 }
 @media (min-width: 1025px) {
   .add-to-cart-btn:hover {
-    background-color: #2d4f8f;
+    background-color: var(--green-dark-color);
   }
 }
 .add-to-cart-btn--disabled {
@@ -624,6 +624,10 @@ a {
 }
 .add-plus--visibility {
   opacity: 1;
+}
+
+.add-to-cart-btn--modal {
+  top: 0;
 }
 
 .hero {
@@ -1015,6 +1019,9 @@ a {
   padding: var(--main-offset);
   background-color: var(--putty-sweet-color);
 }
+.view-product__image {
+  padding-right: 10px;
+}
 .view-product__container {
   display: -ms-grid;
   display: grid;
@@ -1061,6 +1068,11 @@ a {
   padding: 50px 100px;
   background-color: var(--ice-color);
 }
+@media (max-width: 768px) {
+  .view-product__top {
+    padding: 20px;
+  }
+}
 .view-product__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1082,12 +1094,22 @@ a {
 .view-product__property {
   font: var(--font-regular);
 }
+@media (max-width: 768px) {
+  .view-product__property {
+    font-size: 20px;
+  }
+}
 .view-product__price {
   font: var(--font-light);
 }
 .view-product__refine {
   font: var(--font-mini-light);
   margin-bottom: var(--second-offset);
+}
+@media (max-width: 768px) {
+  .view-product__refine {
+    font-size: 14px;
+  }
 }
 .view-product__details {
   -ms-grid-column-span: 6;
@@ -1104,7 +1126,16 @@ a {
 }
 
 .details-accordion__title {
-  line-height: 0;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .details-accordion__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 .details-accordion__control {
   display: -webkit-box;
@@ -1126,8 +1157,6 @@ a {
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin-top: 5px;
-  margin-left: var(--small-offset);
   background-image: url("../img/cross.svg");
   background-position: center;
   background-size: cover;
@@ -1382,6 +1411,13 @@ a {
   border-radius: 4px;
   width: 580px;
   padding: var(--main-offset);
+}
+@media (max-width: 576px) {
+  .cart-modal {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+  }
 }
 .cart-modal .graph-modal__close {
   display: none;
@@ -1828,6 +1864,9 @@ a {
   display: grid;
   -ms-grid-column-span: 3;
   grid-column: 3 span;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .nav__item:last-child {
   margin-left: auto;

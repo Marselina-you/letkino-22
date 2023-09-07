@@ -23,6 +23,11 @@
     @content;
   }
 }
+@mixin small-tablet-menu {
+  @media (min-width: (768px)) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: (576px)) {

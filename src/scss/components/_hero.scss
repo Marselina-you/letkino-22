@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     //min-height: 900px;
-    min-height: 750px;
+    min-height: 700px;
   }
   @include mobile {
     background-image: url('../img/mb-phone.jpg');
@@ -61,7 +61,12 @@
     align-items: center;
     margin-top: 20px;
   }
+
+  @include small-tablet {
+    margin-top: 100px;
+  }
   @include mobile {
+    margin-top: 20px;
     img {
       width: 300px;
     }
@@ -89,6 +94,7 @@
 
 }
 .menu {
+
   padding: 12px 0;
   margin-top: 38px;
   background-color: var(--putty-light-color);
@@ -96,11 +102,17 @@
   display: grid;
   grid-column: 12 span;
   grid-template-columns: repeat(12, 1fr);
+  //display: none;
 
-  @include mobile {
+
+
+  @include small-tablet {
     display: none;
 
+
+
   }
+
 }
 .logo {
   margin: 0;

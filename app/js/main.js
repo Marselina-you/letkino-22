@@ -18,6 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_validate_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/validate.js */ "./src/js/components/validate.js");
 /* harmony import */ var _components_validate_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_validate_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_about_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/about-slider.js */ "./src/js/components/about-slider.js");
+/* harmony import */ var _components_menu_burger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/menu-burger.js */ "./src/js/components/menu-burger.js");
+/* harmony import */ var _components_menu_burger_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_menu_burger_js__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -259,6 +262,27 @@ document.addEventListener('click', e => {
   if (!e.target.classList.contains('mini-cart') && e.target.closest('.mini-cart') && !e.target.classList.contains('cart__btn')) {
     miniCart.classList.remove('mini-cart--visible');
   }
+});
+
+/***/ }),
+
+/***/ "./src/js/components/menu-burger.js":
+/*!******************************************!*\
+  !*** ./src/js/components/menu-burger.js ***!
+  \******************************************/
+/***/ (() => {
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.hero__nav');
+const menuMobile = document.querySelector('.menu-mobile');
+const list = document.querySelector('.nav__list');
+const wrap = document?.querySelector('.burger-wrap');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('hero-nav--active');
+  menuMobile.classList.toggle('menu--open');
+  wrap?.classList.toggle('burger-wrap--close');
+  list.classList.toggle('nav__list--tablet');
 });
 
 /***/ }),

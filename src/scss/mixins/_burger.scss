@@ -4,14 +4,15 @@
   --burger-width: 30px;
   --burger-height: 30px;
   --burger-line-height: 2px;
-
+box-sizing: content-box;
   position: relative;
   border: none;
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
-  background-color: transparent;
+
+
+
   cursor: pointer;
 
   &::before,
@@ -21,12 +22,13 @@
     left: 0;
     width: 100%;
     height: var(--burger-line-height);
-    background-color: currentColor;
+    background-color: black;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   }
 
   &::before {
     top: 0;
+
   }
 
   &::after {
@@ -39,27 +41,33 @@
     top: 50%;
     width: 100%;
     height: var(--burger-line-height);
-    background-color: currentColor;
+    background-color: var(--dark-color);
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
   }
 
   &--active {
+    background-color: inherit;
     &::before {
+      background-color: var(--green-color);
       top: 50%;
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+
+
     }
 
     &::after {
       top: 50%;
       transform: rotate(-45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      background-color: var(--green-color);
     }
 
     .burger__line {
       transform: scale(0);
       transition: transform 0.3s ease-in-out;
+      background-color: black;
     }
   }
 }

@@ -14,98 +14,97 @@
   <link rel="preload" href="fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
 <link rel="stylesheet" href="css/main.css">
-
-  <script defer src="js/main.js"></script>
+<script defer src="js/main.js"></script>
 </head>
 
-<body class="">
+<body class="" id="page">
   <div class="site-container">
     <header class="header">
   <div class="container-fluid header__container">
-  <div class="connect">
-    <div class="connect__block">
-      <a class="connect__image" href="">
-        <svg>
-          <use xlink:href="img/sprite.svg#phone"></use>
-        </svg>
-      </a>
-      <a class="connect__link none-mobile" href="">+7 (806-33) 3-55-55</a>
-    </div>
-    <div class="connect__block">
-      <a class="connect__image" href="">
-        <svg>
-          <use xlink:href="img/sprite.svg#mail"></use>
-        </svg>
-      </a>
-      <a class="connect__link none-mobile" href="">cheese@letkino.ru</a>
-    </div>
-</div>
-<div class="header__block-icons">
-  <div class="navigation">
-    <a class="navigation__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#houme"></use>
-      </svg>
-    </a>
-    <button class="btn-reset cart__btn cart">
-      <svg>
-        <use xlink:href="img/sprite.svg#basket"></use>
-      </svg>
-      <div class="cart__count"></div>
-    </button>
-    <div class="mini-cart">
-      <div class="mini-cart__top" data-simplebar>
-        <ul class="mini-cart__list list-reset"></ul>
+    <div class="connect">
+      <div class="connect__block">
+        <a class="connect__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+        <a class="connect__link none-mobile" href="">+7 (806-33) 3-55-55</a>
       </div>
-      <div class="mini-cart__bottom">
-        <div class="mini-cart__itog">
-          <span class="mini-cart__txt">Итого:</span>
-          <span class="mini-cart__summ"></span>
+      <div class="connect__block">
+        <a class="connect__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+        </a>
+        <a class="connect__link none-mobile" href="">cheese@letkino.ru</a>
+      </div>
+    </div>
+    <div class="header__block-icons">
+      <div class="navigation">
+        <a class="navigation__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#houme"></use>
+          </svg>
+        </a>
+        <button class="btn-reset cart__btn cart">
+          <svg>
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <div class="cart__count"></div>
+        </button>
+        <div class="mini-cart">
+          <div class="mini-cart__top" data-simplebar>
+            <ul class="mini-cart__list list-reset"></ul>
+          </div>
+          <div class="mini-cart__bottom">
+            <div class="mini-cart__itog">
+              <span class="mini-cart__txt">Итого:</span>
+              <span class="mini-cart__summ"></span>
+            </div>
+            <button class="btn-reset btn btn--mail mini-cart__btn" data-graph-path="cart-modal">Перейти в
+              корзину</button>
+          </div>
         </div>
-        <button class="btn-reset btn btn--mail mini-cart__btn" data-graph-path="cart-modal">Перейти в корзину</button>
+        <a class="navigation__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#order"></use>
+          </svg>
+        </a>
+        <a class="navigation__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#account"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="social">
+        <a class="social__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#twit"></use>
+          </svg>
+        </a>
+        </a>
+        <a class="social__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a class="social__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#odno"></use>
+          </svg>
+          <a class="social__image" href="">
+            <svg>
+              <use xlink:href="img/sprite.svg#what"></use>
+            </svg>
+          </a>
       </div>
     </div>
-    <a class="navigation__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#order"></use>
-      </svg>
-    </a>
-    <a class="navigation__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#account"></use>
-      </svg>
-    </a>
   </div>
-  <div class="social">
-    <a class="social__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#twit"></use>
-      </svg>
-    </a>
-    </a>
-    <a class="social__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#vk"></use>
-      </svg>
-    </a>
-    <a class="social__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#odno"></use>
-      </svg>
-      <a class="social__image" href="">
-        <svg>
-          <use xlink:href="img/sprite.svg#what"></use>
-        </svg>
-      </a>
-  </div>
-</div>
-
-</div>
 </header>
 
     <main class="main">
 
-      <section class="hero">
+      <section class="hero page-hero">
   <div class="container hero__container">
     <div class="menu hero__menu">
       <div class="logo"><img loading="lazy" src="/img/logo.svg" class="connect__link-image" width="85" height="68"
@@ -132,16 +131,12 @@
         <li class="menu-mobile__item"><a href="#" class="menu-mobile__link">Доставка</a></li>
       </ul>
     </div>
-
     <div class="hero__content">
-
       <h1 class="hero__title title visually-hidden">Леткино</h1>
-
-        <div class="hero__big-logo">
-          <img src="img/big-logo.svg" alt="">
-          <h2 class="hero__subtitle">сыроварня с 1985 года</h2>
-        </div>
-
+      <div class="hero__big-logo">
+        <img src="img/big-logo.svg" alt="">
+        <h2 class="hero__subtitle">сыроварня с 1985 года</h2>
+      </div>
     </div>
   </div>
 </section>
@@ -159,7 +154,6 @@
   <div class="container-fluid catalog__container">
     <div class="catalog__content">
       <ul class="catalog__list catalog-list list-reset"></ul>
-
     </div>
     <div class="catalog__btn-wrap">
       <button class="catalog__more btn btn-reset btn--mail">Показать еще</button>
@@ -167,104 +161,84 @@
   </div>
 </section>
 
-<section class="about-slider" id="slider">
+      <section class="about-slider" id="slider">
   <div class="container">
     <h2 class="about-slider__title visually-hidden">О нас</h2>
     <div class="swiper aboutSlider">
       <div class="swiper-wrapper">
         <div class="swiper-slide about-slider__slide"><img src="img/slide1.png" alt="">
-        <div class="about-slider-content">
-          <p>Ферма-сыроварня «Леткино» работает с 1995
-                                 года, основное направление —
-                                  производство сыров по европейским стандартам
-                                 из натурального сырья</p>
-        </div></div>
+          <div class="about-slider-content">
+            <p>Ферма-сыроварня «Леткино» работает с 1995
+              года, основное направление —
+              производство сыров по европейским стандартам
+              из натурального сырья</p>
+          </div>
+        </div>
         <div class="swiper-slide"><img src="img/slide2.png" alt="">
           <div class="about-slider-content">
             <p> Мы готовим сыры из натурального коровьего,
-          козьего и овечьего молока. Мы сами выращиваем
-        и ухаживаем за нашими животными</p>
+              козьего и овечьего молока. Мы сами выращиваем
+              и ухаживаем за нашими животными</p>
           </div>
         </div>
         <div class="swiper-slide"><img src="img/slide3.png" alt="">
           <div class="about-slider-content">
             <p>Наша ферма находится в 300 км от Москвы,
-            в деревне Леткино. Здесь вы можете увидеть все
-           сами: пообщаться с животными, посетить
-            дегустационную избу, посмотреть на процесс
-            приготовления и познакомиться с мастерами</p>
-         </div></div>
+              в деревне Леткино. Здесь вы можете увидеть все
+              сами: пообщаться с животными, посетить
+              дегустационную избу, посмотреть на процесс
+              приготовления и познакомиться с мастерами</p>
+          </div>
+        </div>
         <div class="swiper-slide"><img src="img/slide4.png" alt="">
-          <div class="about-slider-content"><p>
-            Мы готовим сыры из натурального коровьего,
-         козьего и овечьего молока. Мы сами выращиваем
-       и ухаживаем за нашими животными</p>
-         </div></div>
+          <div class="about-slider-content">
+            <p>
+              Мы готовим сыры из натурального коровьего,
+              козьего и овечьего молока. Мы сами выращиваем
+              и ухаживаем за нашими животными</p>
+          </div>
+        </div>
         <div class="swiper-slide"><img src="img/slide5.png" alt="">
           <div class="about-slider-content">
 
-              <span class="about-slider-content__title">Наш адрес</span>
-            <address class="about-slider-content__address"><p>
-              Калязинский район, д. Леткино, стр. 2
+            <span class="about-slider-content__title">Наш адрес</span>
+            <address class="about-slider-content__address">
+              <p>
+                Калязинский район, д. Леткино, стр. 2
             </address>
             <em class="about-slider-content__tel"></em>+7 495 679-45-45</em>
-
-         </div></div>
+          </div>
+        </div>
         <div class="swiper-slide"><img src="img/slide1.png" alt="">
           <div class="about-slider-content">
-           <span class="about-slider-content__title">ДОСtАВИМ ПО ВАШЕМУ АДРЕСУ</span>
-           <em class="uppercase">БеСПЛАТНО</em>
+            <span class="about-slider-content__title">ДОСtАВИМ ПО ВАШЕМУ АДРЕСУ</span>
+            <em class="uppercase">БеСПЛАТНО</em>
             <span>Доставка осуществляется по будням</span>
             <span>с 10.00 до 20.00</span>
-         </div></div>
+          </div>
+        </div>
         <div class="swiper-slide"><img src="img/slide2.png" alt="">
           <div class="about-slider-content">
             <p>
-            Мы готовим сыры из натурального коровьего,
-         козьего и овечьего молока. Мы сами выращиваем
-       и ухаживаем за нашими животными</p>
-         </div></div>
-
+              Мы готовим сыры из натурального коровьего,
+              козьего и овечьего молока. Мы сами выращиваем
+              и ухаживаем за нашими животными</p>
+          </div>
+        </div>
       </div>
       <div class="about-slider-nav">
         <div class="about-slider-nav__next"></div>
         <div class="about-slider-nav__prev"></div>
       </div>
-
       <div class="swiper-pagination"></div>
     </div>
   </div>
-
 </section>
 
       <div class="message">
   <div class="container message__container">
     <div class="message__title">Напишите нам!</div>
-   <!--
-    <form action="" class="form message__form">
-      <label class="form__label" for="name">
-        <input type="text" name="name" class="input-reset form__input" placeholder="*Имя">
-      </label>
-      <label class="form__label" for="mail">
-        <input type="text" name="mail" class="input-reset form__input" placeholder="*Email">
-      </label>
-      <label class="form__label" for="theme">
-        <input type="text" name="theme" class="input-reset form__input" placeholder=" Тема">
-      </label>
-      <label class="form__label" for="message">
-        <textarea type="text" name="message" class="textarea-reset form__textarea" placeholder="*Сообщение"></textarea>
-
-      </label>
-      <div class="form__btn">
-        <button class="btn-reset btn--mail">Отправить</button>
-      </div>
-
-
-    </form>
-   -->
-
     <form action="#" class="callback-form">
-
       <label class="form__label">
         <input type="text" class="input-reset callback-form__input" placeholder="Ваше имя" name="name"
           data-validate-field="name">
@@ -274,15 +248,14 @@
           data-validate-field="phone">
       </label>
       <label class="form__label" for="message">
-        <textarea type="text" name="message" class="textarea-reset callback-form__textarea" placeholder="*Сообщение"></textarea>
-
+        <textarea type="text" name="message" class="textarea-reset callback-form__textarea"
+          placeholder="*Сообщение"></textarea>
       </label>
       <div class=" callback-form__btn">
         <button class="btn btn-reset btn--mail">Отправить</button>
       </div>
     </form>
   </div>
-
 </div>
 
       <section class="contacts">
@@ -299,6 +272,13 @@
 
     </main>
     <footer class="footer">
+  <a href="#page" data-scroll class="to-top">
+    <span class="to-top__icon">
+      <svg>
+        <use xlink:href="img/sprite.svg#to-top"></use>
+      </svg>
+    </span>
+  </a>
   <div class="container-fluid footer__container">
     <div class="info footer__info">alferova-studio.com</div>
     <div class="footer__social">
@@ -307,27 +287,25 @@
           <use xlink:href="img/sprite.svg#twit"></use>
         </svg>
       </a>
-    </a>
-    <a class="footer__image" href="">
-      <svg>
-        <use xlink:href="img/sprite.svg#vk"></use>
-      </svg>
-    </a>
+      </a>
+      <a class="footer__image" href="">
+        <svg>
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
       <a class="footer__image" href="">
         <svg>
           <use xlink:href="img/sprite.svg#odno"></use>
         </svg>
-
-      <a class="footer__image" href="">
-        <svg>
-          <use xlink:href="img/sprite.svg#what"></use>
-        </svg>
-      </a>
-
+        <a class="footer__image" href="">
+          <svg>
+            <use xlink:href="img/sprite.svg#what"></use>
+          </svg>
+        </a>
     </div>
-
   </div>
 </footer>
+<div class="overlay"></div>
 
     <div class="graph-modal">
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="prod-modal">

@@ -1,6 +1,5 @@
 .catalog-list {
   display: grid;
-  //grid-column: 12 span;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
 

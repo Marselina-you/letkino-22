@@ -7,7 +7,6 @@
     padding-right: var(--small-offset);
   }
 
-
   &__list {
     @include flex-v-center;
 
@@ -65,7 +64,6 @@
 }
 .burger-wrap--close {
   border: none;
-  //padding: 7px;
   background-color: transparent;
 }
 .burger {
@@ -109,18 +107,6 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .menu-mobile {
   position: absolute;
   left: -100%;

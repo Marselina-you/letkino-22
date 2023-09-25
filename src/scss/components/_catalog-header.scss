@@ -12,11 +12,12 @@
 &__content {
     display: grid;
     grid-column: 3 / 7 span;
-    //gap: 60px;
     padding: 65px 0;
+
     @include big-desktop {
       padding: 20px 0;
     }
+
     @include tablet {
       grid-column: 2 / 10 span;
     }

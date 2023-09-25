@@ -6,14 +6,10 @@
   @include mobile {
     position: absolute;
     left: 0;
-
     padding: 10px;
 
   }
-
-
-
-  .graph-modal__close {
+.graph-modal__close {
     display: none;
 
     @include small-tablet {
@@ -147,13 +143,5 @@
   .mini-product {
     padding: var(--small-offset) 0;
   }
-
-
 }
-.cart-modal {
 
-
-
-
-
-}

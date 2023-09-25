@@ -5,6 +5,13 @@
 
   &__image {
     padding-right: 10px;
+
+    @include tablet {
+      width: 50%;
+    }
+    @include small-tablet {
+      width: 40%;
+    }
   }
 
 
@@ -22,6 +29,10 @@
 }
 &__availability {
   font: var(--font-light);
+
+  @include small-tablet {
+    font-size: 18px;
+  }
 }
 &__content {
   display: grid;
@@ -39,8 +50,12 @@
   padding: 50px 100px;
   background-color: var(--ice-color);
 
+  @include tablet {
+    padding: 30px 20px;
+  }
+
   @include small-tablet {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
   }
 
 }
@@ -50,19 +65,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    width: 50%;
+  }
+  @include small-tablet {
+    width: 60%;
+    align-items: flex-start;
+  }
 }
 &__name {
   font: var(--font-regular-bold);
+  display: inline-block;
+
+  @include small-tablet {
+    //min-height: 100px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 100%;
+  }
 }
 &__property {
   font: var(--font-regular);
 
   @include small-tablet {
     font-size: 20px;
+
+    line-height: 50%;
   }
 }
 &__price {
   font: var(--font-light);
+
+  @include small-tablet {
+    font-size: 20px;
+  }
 
 }
 &__refine {
@@ -71,6 +109,7 @@
 
   @include small-tablet {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 &__details {
@@ -80,7 +119,18 @@
   box-shadow: 0px -4px 10px rgba(0, 13, 84, 0.1);
   background-color: var(--light-color);
 
+  @include tablet {
+    padding: 30px 10px;
+  }
+
 }
+}
+.graph-modal__close {
+
+  @include small-tablet {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 

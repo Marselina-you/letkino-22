@@ -20,7 +20,7 @@ if (catalogList) {
       return response.json();
     })
     .then((data) => {
-      //console.log(data);
+
 
       dataLength = data.length;
 
@@ -29,25 +29,20 @@ if (catalogList) {
       for (let i = 0; i < dataLength; i++ ) {
         if (i < quantity) {
         let item = data[i];
-        //console.log(item)
+
 
         catalogList.innerHTML += `
         <li class="catalog-list__item">
       <article class="product">
         <div class="product__image">
           <img src="${item.mainImage}" alt="${item.title}">
-
           <button class="product__view  btn-reset product__btn" data-graph-path="prod-modal" data-id="${item.id}" aria-label="показать инфо">
           Быстрый просмотр
     </button>
-
-        </div>
-
+    </div>
         <div class="product__title">${item.title}</div>
         <div class="product__land">${item.land}</div>
         <div class="product__property">${item.property}</div>
-
-
         <div class="add-plus add-plus--none">
   <div class="add-plus__minus">
     <button tabindex="0" type="button" class="add-plus__btn add-plus__btn-plus">
@@ -58,7 +53,6 @@ if (catalogList) {
     </button>
   </div>
   <span class="add-plus__quantity">1</span>
-
   <div class="add-plus__plus">
     <button tabindex="0" type="button" class="add-plus__btn add-plus__btn-minus">
       <span class="add-plus__svg" style="border-radius: 8px;">
@@ -66,17 +60,13 @@ if (catalogList) {
           <path d="M12 4a1 1 0 0 0-1 1v6H5a1 1 0 1 0 0 2h6v6a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V5a1 1 0 0 0-1-1Z">
           </path>
         </svg>
-
-      </span>
+        </span>
     </button>
   </div>
 </div>
-
-
-        <button class="product__btn add-to-cart-btn"  data-id="${item.id}" aria-label="корзина">в корзину
+<button class="product__btn add-to-cart-btn"  data-id="${item.id}" aria-label="корзина">в корзину
 </button>
-
-      </article>
+</article>
     </li>`;
         }
 
@@ -330,7 +320,7 @@ miniCartList.addEventListener('click', (e) => {
     });
 
   }
-//eng casrtlogic
+//end casrtlogic
 //чтобы в мод.окне быстрого просмотра можно было добавлять
 
   const openOrderModal = document.querySelector('.mini-cart__btn');
